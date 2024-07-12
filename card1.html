@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+                    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar1{
+            display:flex;
+            height:50px;
+            width:100%;
+            box-shadow: 1px 1px 1px rgba(8, 0, 0, 0.958);
+            
+        }
+
+        .navbar1 li{
+            float:left;
+            text-decoration:none;
+            margin-left:0px;
+            list-style: none;
+            font-size: 15px;
+            
+        }
+        .navbar1 ul{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .navbar1 a{
+            text-decoration:none;
+            color: rgb(117, 117, 118);
+            line-height:45px;            
+        }
+        .navbar1 a:hover{
+            text-decoration:none;
+            color: rgb(117, 117, 118);
+            line-height:45px;  
+                 
+        }
+        .navbar1 button{
+            height: 50px;
+            width: 125px;
+            border:none;
+            background-color:white;
+        }
+        .navbar1 button:hover{
+            height: 50px;
+            width: 125px;
+            border:none;
+            background-color: aliceblue;
+        }
+        .main{
+            height:650px;
+            margin-top:2px;
+            
+        }
+        .main1{
+            height:650px;
+            width:80%;
+            background-color: rgb(235, 240, 238);
+            margin-left:150px;
+        }
+        .main2{
+            height:50px;
+            background-color:white;
+            line-height: 45px;
+            padding-left:30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:20px;
+
+        }
+
+        
+        .footer2{
+            height:300px;
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color:rgb(244, 242, 234);
+
+        }
+        .footer2 a{
+            display:block;
+            text-decoration:none;
+            color:rgb(126, 123, 123);
+            margin-top:10px
+        }
+        .footer2 p{
+            margin-top:30px;
+            font-size:20px;
+            margin-bottom: 20px;
+        
+        }
+        hr{
+            margin-left:80px;
+            width:90%;
+            background-color: beige;
+        }
+        .card{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .card-section1{
+            height:260px;
+            width:220px;        
+            margin-top: 25px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius:0.8rem;
+        }
+       .card-section1 img{
+            height:150px;
+            width:100%;
+            border-radius:1rem;
+        }
+        .card-section1 h4{
+            padding-left:8px;
+        }
+        .card-section1 h6{
+            margin-top:5px;
+            padding-left:10px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(117, 117, 118);
+        }
+        .card-section1 h5 {
+            color: rgb(21, 21, 21);
+            margin-top:5px;
+            padding-left:10px;
+            float: left;
+        }
+        .card-section1 button{
+            margin-left: 70px;
+            height:25px;
+            width:70px;
+            border-radius:0.5rem;
+            color: rgb(24, 222, 31);
+            background-color: rgb(244, 248, 249);
+        }
+        
+    </style>
+</head>
+<body>
+    <hr style="width: 100%; margin-left: 0px;
+    margin-right: 0px;">
+    <div class="navbar1">
+            <nav>
+                <ul>
+                    <li style="margin-left:50px; margin-right:50px;"><a href="navigation.html"><button>Back</button></a></li>
+                    <li><a href="card2.html"><button>Vegetables</button></a></li>
+                    <li><a href="card1.html"><button>Fruits</button></a></li>
+                    <li><a href="card .html"><button>Dairy product</button></a></li>
+                    <li><a href="pulses.html"><button>Pulses</button></a></li>
+                    <li><a href="grains.html"><button>Grains</button></a></li>
+                </ul>
+            </nav>
+    </div>
+    <div class="main">
+
+        <div class="main1">
+
+            <div class="main2">
+                <h3>Fruits</h3>
+            </div>
+            
+            <div class="card">
+
+                <div class="card-section1">
+                    
+                            <a href="one.html"> <img src="./image/one.jpg"/></a>
+                            <h4>Sweet Tamarind</h4>
+                            <h4>Box</h4>
+                            <h6>125 gm</h6>
+                            <h5 class="mrp">$132</h5>
+                            <button type="submit">ADD</button>
+                            <h6 style="text-decoration: line-through;">$140</h6>
+                 </div> 
+
+                <div class="card-section1">
+                         <a href="two.html"><img src="./image/two.jpg"/></a>
+                        <h4>Guava Premium<</h4>
+                        
+                        <h6>400g-500gm</h6>
+                        <h5 class="mrp">$66</h5>
+                        <button type="submit">ADD</button>
+                        <h6 style="text-decoration: line-through;">$75</h6>
+                </div> 
+
+                <div class="card-section1">
+                        <a href="three.html"><img src="./image/three.jpg"/></a>
+                        <h4>Red Delicious</h4>
+                        <h4>apple</h4>
+                        <h6>250 g</h6>
+                        <h5 class="mrp">$132</h5>
+                        <button type="submit">ADD</button>
+                        <h6 style="text-decoration: line-through;">$150</h6>
+                        
+                </div> 
+
+                <div class="card-section1">
+                    <a href="four.html"><img src="./image/four.jpg"/></a>
+                    <h4>Pomegranate (Anaar)</h4>
+                    <h4>Regular</h4>
+                    <h6>1 kg</h6>
+                    <h5 class="mrp">$183</h5>
+                    <button type="submit">ADD</button>
+                    <h6 style="text-decoration: line-through;">$200</h6>
+                </div>
+
+                <div class="card-section1">
+                    <a href="five.html"><img src="./image/five.jpg"/></a>
+                    <h4>Very Berry Fruits</h4>
+                    <h4>Fresh Frozen Strawberry</h4>
+                    <h6>150 g</h6>
+                    <h5 class="mrp">$170</h5>
+                    <button type="submit">ADD</button>
+                    <h6 style="text-decoration: line-through;">$180</h6>
+                </div>
+                            
+        </div>
+
+        <div class="card">
+
+            
+            <div class="card-section1">
+                <a href="six.html"><img src="./image/six.jpg"/></a>
+                <h4>Mango</h4>
+                <h4>Sinduri Mango</h4>
+                <h6>200 g</h6>
+                <h5 class="mrp">$162</h5>
+                <button type="submit">ADD</button>
+                <h6 style="text-decoration: line-through;">$180</h6>
+            </div> 
+
+            <div class="card-section1">
+                    <a href="seven.html"><img src="./image/seven.jpg"/></a>
+                    <h4>Green Grapes - Premium</h4>
+                    <h4>Angoor</h4>
+                    <h6>500 gm</h6>
+                    <h5 class="mrp">$123</h5>
+                    <button type="submit">ADD</button>
+                    <h6 style="text-decoration: line-through;">$130</h6>
+            </div> 
+
+            <div class="card-section1">
+                    <a href="eight.html"><img src="./image/eight.jpg"/></a>
+                    <h4>Tender Coconut</h4>
+                    <h4> (1 piece)</h4>
+                    <h6>1 pc</h6>
+                    <h5 class="mrp">$67</h5>
+                    <button type="submit">ADD</button>
+                    <h6 style="text-decoration: line-through;">$80</h6>
+                    
+            </div> 
+
+            <div class="card-section1">
+                <a href="nine.html"><img src="./image/nine.jpg"/></a>
+                <h4>Fig</h4>
+                <h4></h4>
+                <h6>250 gm</h6>
+                <h5 class="mrp">$150</h5>
+                <button type="submit">ADD</button>
+                <h6 style="text-decoration: line-through;">$170</h6>
+            </div>
+
+            <div class="card-section1">
+                <a href="ten.html"><img src="./image/ten.jpg"/></a>
+                <h4>Kiran Watermelon</h4>
+                <h4>Amrakhand</h4>
+                <h6> 1pc 200g-300gm</h6>
+                <h5 class="mrp">$73</h5>
+                <button type="submit">ADD</button>
+                <h6 style="text-decoration: line-through;">$99</h6>
+            </div>
+                     
+    </div>
+    </div>
+<hr>
+    <div class="footer2">
+        <ul>
+            <p>Company</p>
+            <a href="about.html">about</a>
+            <a href="about.html">lead</a>
+        
+        </ul>
+        <ul>
+            <p>For Consumers </p>
+            <a href="privacy.html">Privacy</a>
+            <a href="partner.html">partners</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+        <ul>
+            <p>Product</p>
+            <a href="card2.html">Vegetable</a>
+            <a href="card1.html">Fruits</a>
+            <a href="card .html">Dairy Product</a>
+            <a href="pulses.html">Pulses</a>
+            <a href="grains.html">Grains</a>
+        </ul>   
+    </div>
+
+    
+</body>
+</html>

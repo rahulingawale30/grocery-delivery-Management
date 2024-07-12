@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+                    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            display:flex;
+            height:50px;
+            width:100%;
+            background-color:rgb(241, 191, 11);
+        }
+        .navbar li{
+            float:left;
+            text-decoration:none;
+            margin-left: 50px;
+            list-style: none;
+        }
+        .navbar ul{
+            margin-left:1100px;
+        }
+        .navbar a{
+            text-decoration:none;
+            color:black;
+            line-height:42px;
+
+        }
+        .main{
+            background-image:url("./contact1.jpg");
+            height:600px;
+            width:100%;
+            background-size:100% 100%;
+            border-radius:0.2rem;
+            margin-top:1px;
+            background-repeat: no-repeat;
+            padding-top:70px;
+            box-shadow:1px 2px 10px black;
+
+        }
+         form{
+            height:450px;
+            width:450px;
+            
+            margin-left:900px;
+            padding-top:10px;
+            border-radius:0.4rem;
+            backdrop-filter: blur(1px);
+        }
+        .main form input{
+            width:90%;
+            height:30px;
+            margin-top:10px;
+            margin-left:20px;
+            border-radius:0.2rem;
+            padding-left: 10px;
+        }
+        .main form textarea{
+            width:90%;
+            margin-top:20px;
+            margin-left:20px;
+            height:150px;
+            border-radius:0.2rem;
+        }
+        .main form button{
+            width:90%;
+            height:40px;
+            margin-top:20px;
+            margin-left:20px;
+            border-radius:0.2rem;
+            padding-left: 10px;
+            background-color: rgb(32, 35, 30);
+            color:white;
+        }
+        .foot{
+            background-color: rgb(199, 247, 230);
+        }
+        .footer{
+            width:80%;
+            height:350px;
+            padding-left: 150px;
+            padding-top:50px;
+            background-color: rgb(199, 247, 230);
+            padding-right:50px;
+
+           
+        }
+        .footer h3{
+            margin-top:30px;
+            
+        }
+        .footer p{
+            margin-top:20px;
+            
+        }
+        .footer2{
+            height:300px;
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color:rgb(37, 35, 35);
+
+        }
+        .footer2 a{
+            display:block;
+            text-decoration:none;
+            color:white;
+            margin-top:10px
+        }
+        .footer2 a:hover{
+            display:block;
+            text-decoration:none;
+            color:white;
+            margin-top:10px;
+            font-size:20px;
+        }
+        .footer2 p{
+            margin-top:30px;
+            font-size:20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        hr{
+            margin-left:80px;
+            width:90%;
+            background-color: beige;
+        }
+        .error{
+             color: red;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+            <nav>
+                 <ul>
+                    <li><a href="navigation.html">Home</a></li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="partner.html">Partners</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                 </ul>
+            </nav>
+    </div>
+    <div class="main">
+            <form nonvalidate>
+                <input type="text" placeholder="how can we help you ">
+                
+                <input type="text" placeholder="name*" id="name" >
+                <span class="error" id="nameError"></span>
+                
+                <input type="email" placeholder="email " id="email">
+                <span class="error" id="emailError"></span>
+                
+                <input type="text" placeholder="phone*" id="phone">
+                <span class="error" id="phoneError"></span>
+                
+                <textarea placeholder="type text*" rows="4"></textarea>
+                <button type="submit">Submit</button>
+
+            </form>
+    </div>
+<div class="foot">
+    <div class="footer">
+        <h3>#1 instant delivery service in India</h3>
+        <p>Shop on the go and get anything delivered in minutes.
+             Buy everything from groceries to fresh fruits & vegetables, cakes and 
+             bakery items, to meats & seafood, cosmetics, mobiles & accessories, electronics, 
+             baby care products and much more. We get it delivered at your doorstep in the fastest
+             and the safest way possible.
+        </p>
+        <h3>single app for all your daily needs</h3>
+        <p>Order thousands of products at just a tap - milk,
+             eggs, bread, cooking oil, ghee, atta, rice,
+              fresh fruits & vegetables, spices, chocolates, chips,
+               biscuits, Maggi, cold drinks, shampoos, soaps, body wash,
+                pet food, diapers, electronics, other organic and gourmet 
+                products from your neighbourhood stores and a lot more
+        </p>
+        <h3>order online on shopingoo to enjoy instant delivery magic</h3>
+        <p> we currently serve: Agra, Ahmedabad, Bengaluru,
+             Bhopal, Chandigarh, Chennai, Dehradun, Delhi, Faridabad,
+              Goa, Gurgaon, Indore, Hyderabad, Jaipur, Jalandhar, Kanpur,
+               Kolkata, Lucknow, Ludhiana, Meerut, Mohali, Mumbai, Panchkula,
+                Pune, UP-NCR, Vadodara, Zirakpur
+        </p>
+    </div>
+</div>
+    <hr>
+    <div class="footer2">
+        <ul>
+            <p>Company</p>
+            <a href="about.html">about</a>
+            <a href="about.html">lead</a>
+        </ul>
+        <ul>
+            <p>For Consumers </p>
+            <a href="privacy.html">Privacy & terms</a>
+            <a href="partner.html">Partners</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+        <ul>
+            <p>Product</p>
+            <a href="card2.html">Vegetable</a>
+            <a href="card1.html">Fruits</a>
+            <a href="card .html">Dairy Product</a>
+            <a href="pulses.html">Pulses</a>
+            <a href="grains.html">Grains</a>
+        </ul>
+   
+   
+
+    </div>
+
+    <script src="./contact.js"></script>
+</body>
+</html>

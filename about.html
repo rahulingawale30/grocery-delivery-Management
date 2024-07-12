@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+
+	<title>About Us</title>
+    <style>
+        * {
+	        margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+        }
+
+/* Global Styles */
+
+        body {
+	        font-family: Arial, sans-serif;
+        }   
+
+/* Header */
+
+        header {
+	background-color: #121821;
+	color: white;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 2px 2px rgba(228, 225, 225, 0.2);
+            }
+
+        nav {
+	        display: flex;
+	        justify-content: space-between;
+	        align-items: center;
+	        margin: 5px auto;
+	        padding: 0 20px;
+        }
+
+        .logo {
+	        font-size: 1.5rem;
+	        font-weight: bold;
+	        color: #f3bf14;
+        }
+
+.nav-links {
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li {
+	margin-right: 20px;
+}
+
+.nav-links a {
+	color: #ffff;
+	padding: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+	background-color: white;
+	border-radius: 4px;
+	color: black;
+}
+
+/* About Section */
+
+.about {
+	background: rgb(224, 251, 222);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(5, 14, 114) 100%);
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+s
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+    color: rgb(187, 184, 184);
+}
+
+.about p {
+	font-size: 1rem;
+	color: black;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.about-img {
+	width: 20rem;
+	height: 20rem;
+
+}
+
+.about-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+
+button {
+	border: none;
+	outline: 0;
+	padding: 10px;
+	margin: 2rem;
+	font-size: 1rem;
+	color: white;
+	background-color: #121821;
+	text-align: center;
+	cursor: pointer;
+	width: 15rem;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #37475a;
+}
+
+/* Team Section */
+
+.team {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 18rem;
+	height: 25rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	width: 18rem;
+	height: 12rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.card-info button {
+	margin: 2rem 1rem;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+/* Footer */
+footer {
+	background-color: #222;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+	nav {
+		display: block;
+	}
+
+	.logo {
+		text-align: center;
+	}
+
+	.nav-links {
+		margin-top: 1rem;
+		justify-content: space-between;
+	}
+
+	.nav-links li {
+		margin-right: 0;
+	}
+
+	.about h1 {
+		font-size: 2rem;
+	}
+
+	.about p {
+		font-size: 0.9rem;
+	}
+
+	.about-info {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.about-img {
+		width: 60%;
+		height: 60%;
+		margin-bottom: 1rem;
+	}
+
+	.about-info p {
+		margin: 1rem 2rem;
+	}
+
+	.about-info button {
+		margin: 1rem 2rem;
+		width: 10rem;
+	}
+
+	.team {
+		margin: 0 1rem;
+	}
+}
+.footer1{
+            height:50px;
+            width:100%;
+            background-color: rgba(24, 15, 24, 0.634);
+            display:flex;
+            justify-content: center;
+        }
+        .footer2{
+            height:400px;
+            width:100%;
+            background-color: rgba(53, 51, 54, 0.634);
+            display: flex;
+            justify-content: space-evenly;
+    
+        }
+        .footer1 a{
+            text-decoration:none;
+            color:white;
+            line-height: 50px;
+        }
+        .footer1 a:hover{
+            color:rgb(215, 67, 67);
+            font-size:18px;
+        }
+        .footer2 a{
+            display:block;
+            text-decoration:none;
+            color:antiquewhite;
+            margin-top:10px
+        }
+        .footer2 p{
+            margin-top:30px;
+            font-size:20px;
+            margin-bottom: 20px;
+        
+        }
+        .footer2 a:hover{
+            font-size:20px;
+             color:orange;
+            
+        }
+    </style>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+			Shoppingo.com
+			</div>
+			<ul class="nav-links">
+				<li><a href="navigation.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="partner.html">Partners</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="about">
+		<h1>About Us</h1>
+		<p style="font-weight: bold">
+		Shoppingo is a leading platform...
+		</p>
+		<div class="about-info">
+			<div class="about-img">
+				<img src="./image/shiva8.jpg">
+			</div>
+			<div>
+			<p> Shoppingo reserves the right to change this policy from time to time. Any changes shall be effective immediately upon the
+				posting of the revised Privacy Policy. We encourage you to periodically review this page for the latest information on our
+				privacy practices
+			</p>
+				<button>Read More...</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<h1>Meet Our Team</h1>
+		<div class="team-cards">
+		
+			<!-- Cards here -->
+			<!-- Card 1 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="./Image/shiva12.png" alt="User 1">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Sushant</h2>
+					<p class="card-role">Director</p>
+					<p class="card-email">Sushant@example.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="./Image/shiva11.jpg" alt="User 2">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Akshay</h2>
+					<p class="card-role">CEO</p>
+					<p class="card-email">Akshay@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		
+			<!-- Card 3 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="./Image/shiva10.jpg" alt="User 3">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">krishna</h2>
+					<p class="card-role">President</p>
+					<p class="card-email">krishna.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div >
+        <footer class="footer">
+             <div class="footer1">
+                <a href="navigation.html">BACK TO HOME</a>
+             </div>
+               
+            <div class="footer2">
+                <ul>
+                    <p>Company</p>
+                    <a href="about.html">about</a>
+                    <a href="about.html">lead</a>
+                </ul>
+                <ul>
+                    <p>For Consumers </p>
+                    <a href="privacy.html">Privacy & Terms</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="partner.html">Partners</a>
+                </ul>
+           
+                <ul>
+                    <p>Product</p>
+                    <a href="card2.html">Vegetable</a>
+                    <a href="card1.html">Fruits</a>
+                    <a href="card .html">Dairy Product</a>
+                    <a href="pulses.html">Pulses</a>
+                    <a href="grains.html">Grains</a>
+                </ul>
+           
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

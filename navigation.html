@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document11111111</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            width: 150px;
+            background-color:rgb(98, 176, 167);
+            padding:1rem;
+            height:100%;
+            overflow:hidden;
+            transition: all o.3s;
+            box-shadow: 5px 10px 10px rgba(8, 0, 0, 0.958);
+            diaplay:flex;
+        
+        }
+        .navbar li{
+            list-style:none;
+            padding: 4px 16px;
+            margin:5px;
+            transition: all 0.3s;
+            
+
+        }
+        .navbar li:hover{
+            color:black;
+            transform: translateX(4px);
+            font-size:20px;
+        
+        }
+        .navbar ul a{
+            color:white;
+            line-height: 50px;
+            text-decoration: none;
+        }
+        .navbar ul ul{
+            display:none;
+            position: absolute ;
+        }
+        .navbar ul li:hover > ul{
+            display:block;
+           
+        }
+        .navbar ul a:hover{
+            color:black;
+            text-decoration:none;
+        }
+        .navbar img{
+            height:40px;
+            width:40px;
+            margin-left:30px;
+        
+        }
+        .navbar img:hover{
+            height:50px;
+            width:50px;
+            box-shadow: 5px 5px 10px rgba(8, 0, 0, 0.958);
+   
+        }
+        .navbar hr{
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top:15px;
+            height: 1.5px;
+            display: block;
+            margin-bottom: 5px;
+            width: 110px;
+            background-color:black;
+            outline: none;
+            border: none;
+        
+        }
+        .bottom{
+            margin-top:253px;
+        }
+        .bottom hr{
+
+            margin-left: 15px;
+            margin-right: 15px;
+            height: 1.5px;
+            display: block;
+            margin-bottom: 5px;
+            width: 110px;
+            background-color:red;
+            outline: none;
+            border: none;
+        }
+        hr{
+            margin-top:20px;
+        }
+        .main-second{
+       
+            
+        }
+        
+        .bottom li {
+            padding: 5px 20px;
+            margin:5px;
+            transition: all 0.3s;
+        }
+
+        .bottom li:hover {
+            color:black;
+            transform: translateX(4px);
+        }
+
+        .bottom li a:hover{    
+            color:black;
+        }
+        .image{
+            background-image:url("./image/shop.jpg");
+            height:450px;
+            width:95%;
+            background-size:100% 100%;
+            border-radius:0.2rem;
+            margin-left: 60px;
+            margin-top:20px;
+            animation:slider 12s infinite linear;
+            background-color: rgb(61, 60, 60);
+            background-repeat: no-repeat;
+            padding-left:30px;
+            box-shadow:1px 2px 10px black;
+        }
+        @keyframes slider{
+            20%{
+                background-image:url("./image/shop.jpg"); 
+            }
+            45%{
+                background-image:url("./image/shop4.jpg"); 
+            }
+            85%{ 
+                background-image:url("./image/shop5.jpg");
+            }
+        }
+
+        .main-first{
+            display:flex;
+            background-color:rgb(227, 220, 220);
+            width:100%;
+        
+        }
+        
+        .search1 {
+            width: 100%;
+            text-align: center;
+             padding-left: 30px;
+        }
+
+        .search1 input {
+            width: 80%;
+            outline: none;
+            border: none;
+            border: 1px solid rgb(153, 132, 132);
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .search1 input:hover{
+            width: 85%;
+            outline: none;
+            border: none;
+            border: 1px solid rgb(153, 132, 132);
+            padding: 10px;
+            border-radius: 10px;
+        } 
+        .card{
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 50px;
+            width:100%;
+        }
+
+        .card-section{
+        
+            height:250px;
+            width:300px;        
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius:0.8rem;
+            
+        }
+        .card-section img{
+            margin:42px;
+            height:150px;
+            width:70%;
+            border-radius:1rem;
+        }
+        .card-section1{
+            height:260px;
+            width:190px;        
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius:0.8rem;
+        }
+       .card-section1 img{
+            height:150px;
+            width:100%;
+            border-radius:1rem;
+        }
+        .card-section1 h4{
+            padding-left:8px;
+        }
+        .card-section1 h6{
+            margin-top:5px;
+            padding-left:10px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(117, 117, 118);
+        }
+        .card-section1 h5 {
+            color: rgb(21, 21, 21);
+            margin-top:5px;
+            padding-left:10px;
+            float: left;
+        }
+        .card-section1 button{
+            margin-left: 70px;
+            height:25px;
+            width:70px;
+            border-radius:0.5rem;
+            color: rgb(24, 222, 31);
+            background-color: rgb(244, 248, 249);
+        }
+        
+        .footer1{
+            height:50px;
+            width:109%;
+            background-color: rgba(24, 15, 24, 0.634);
+            display:flex;
+            justify-content: center;
+        }
+        .footer2{
+            height:350px;
+            width:109%;
+            background-color: rgba(53, 51, 54, 0.634);
+            display: flex;
+            justify-content: space-evenly;
+    
+        }
+        .footer1 a{
+            text-decoration:none;
+            color:white;
+            line-height: 50px;
+        }
+        .footer1 a:hover{
+            color:rgb(215, 67, 67);
+            font-size:18px;
+        }
+        .footer2 a{
+            display:block;
+            text-decoration:none;
+            color:antiquewhite;
+            margin-top:10px
+        }
+        .footer2 p{
+            margin-top:30px;
+            font-size:20px;
+            margin-bottom: 20px;
+        
+        }
+        .footer2 a:hover{
+            font-size:20px;
+             color:orange;
+            
+        }
+        .dairy{
+            font-size:22px;
+            padding-left: 40px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .see a{
+            margin-left:700px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:rgb(11, 242, 77);
+            font-size:20px;
+            text-decoration: none;
+        }
+        .fir{
+        position:fixed;
+        }
+        .main-second{
+            margin-left:180px;
+        }
+    </style>
+</head>
+<body>
+<div class="main-first">
+    <div class="fir">
+        <div class="navbar">
+                <h1>Shoppingo</h1>
+                <hr>
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                    <li><i class="fa-solid fa-copy"></i><a href="about.html">About Us</a></li>
+                    <li><i class="fa-regular fa-handshake"></i><a href="partner.html">Partners</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="bottom">
+                    <hr>
+                    <li></a></li>
+                    <li><i class="fa-solid fa-power-off"></i><a href="#" id="Logout"> Logout </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main-second">
+        <div class="search1">
+            <input type="text" placeholder="Search here...">
+            <button style=" float:right; width:100px;height:35px;margin-top: 10px; border-radius: 1rem;color:white;background-color:rgb(141, 209, 38);">Add Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="image">
+
+        </div>
+    
+                
+
+        <div class="main-section">
+                    <pre><span class="dairy">Friuts </span>                                                  <span class="see"><a href="card1.html">see all></a></span></pre>
+             
+            <div class="card">
+
+                <div class="card-section1">
+                            <a href="one.html"><img src="./image/one.jpg"/></a>
+                            <h4>Sweet Tamarind</h4>
+                            <h4>Box</h4>
+                            <h6>125gm</h6>
+                            <h5 class="mrp">$132</h5>
+                            <button type="submit">ADD</button>
+                 </div> 
+
+                <div class="card-section1">
+                        <a href="two.html"> <img src="./image/two.jpg"/></a>
+                        <h4>Guava Premium</h4>
+                        
+                        <h6>400gm-500gm</h6>
+                        <h5 class="mrp">$66</h5>
+                        <button type="submit">ADD</button>
+                </div> 
+
+                <div class="card-section1">
+                         <a href="three.html"><img src="./image/three.jpg"/></a>
+                        <h4>Red Delicious </h4>
+                        <h4>Apple</h4>
+                        <h6>250 g</h6>
+                        <h5 class="mrp">$132</h5>
+                        <button type="submit">ADD</button>
+                        
+                </div> 
+
+                <div class="card-section1">
+                    <a href="four.html"><img src="./image/four.jpg"/></a>
+                    <h4>Pomegranate (Anaar)</h4>
+                    <h4>- Regular</h4>
+                    <h6>1 kg</h6>
+                    <h5 class="mrp">$183</h5>
+                    <button type="submit">ADD</button>
+                </div>
+
+                <div class="card-section1">
+                    <a href="five.html"><img src="./image/five.jpg"/></a>
+                    <h4>Very Berry Fruits</h4>
+                    <h4> Fresh Frozen Strawberry</h4>
+                    <h6>150 g</h6>
+                    <h5 class="mrp">$170</h5>
+                    <button type="submit">ADD</button>
+                </div>
+                
+                <div class="card-section1">
+                    <a href="six.html"><img src="./image/six.jpg"/></a>
+                    <h4> Mango</h4>
+                    <h4>Sinduri Mango</h4>
+                    <h6>500gm-700gm</h6>
+                    <h5 class="mrp">$162</h5>
+                    <button type="submit">ADD</button>
+                </div>
+
+            </div> 
+           
+                    <pre><span class="dairy">Vegetable</span>                                             <span class="see"><a href="card2.html">see all></a></span></pre>
+             
+            <div class="card">
+
+                <div class="card-section1">
+                            <a href="one1.html"><img src="./image/one1.jpg"/></a>
+                            <h4>Fresho Bottle Gourd</h4>
+                            <h4> 1 pc</h4>
+                            <h6>300-400gm</h6>
+                            <h5 class="mrp">$23</h5>
+                            <button type="submit">ADD</button>
+                 </div> 
+
+                <div class="card-section1">
+                        <a href="two2.html"> <img src="./image/two2.jpg"/></a>
+                        <h4>Fresho </h4>
+                        <h4>Ladies' Fingers</h4>
+                        <h6>400 gm</h6>
+                        <h5 class="mrp">$16</h5>
+                        <button type="submit">ADD</button>
+                </div> 
+
+                <div class="card-section1">
+                         <a href="three3.html"><img src="./image/three3.jpg"/></a>
+                        <h4>Fresho</h4>
+                        <h4>Capsicum - Green</h4>
+                        <h6>500 g</h6>
+                        <h5 class="mrp">$45</h5>
+                        <button type="submit">ADD</button>
+                        
+                </div> 
+
+                <div class="card-section1">
+                    <a href="four4.html"><img src="./image/four4.jpg"/></a>
+                    <h4>Fresho</h4>
+                    <h4>Chilli - Green</h4>
+                    <h6>500 g</h6>
+                    <h5 class="mrp">$77</h5>
+                    <button type="submit">ADD</button>
+                </div>
+
+                <div class="card-section1">
+                    <a href="five5.html"><img src="./image/five5.jpg"/></a>
+                    <h4>Fresho Coriander </h4>
+                    <h4>1 pc</h4>
+                    <h6>80-100gm</h6>
+                    <h5 class="mrp">$5</h5>
+                    <button type="submit">ADD</button>
+                </div>
+                
+                <div class="card-section1">
+                    <a href="six6.html"><img src="./image/six6.jpg"/></a>
+                    <h4>Curry Leaves</h4>
+                    <h6>1 kg</h6>
+                    <h5 class="mrp">$223</h5>
+                    <button type="submit">ADD</button>
+                </div>
+
+            </div>
+            
+                  <pre><span class="dairy">Dairy, Bread & Eggs </span>                                   <span class="see"><a href="card .html">see all></a></span></pre>
+             
+            <div class="card">
+
+                <div class="card-section1">
+                            <a href="milk.html"><img src="./image/milk.jpg"/></a>
+                            <h4>Chitale Full Cream</h4>
+                            <h4>Milk</h4>
+                            <h6>500 ml</h6>
+                            <h5 class="mrp">$50</h5>
+                            <button type="submit">ADD</button>
+                 </div> 
+
+                <div class="card-section1">
+                        <a href="breade.html"> <img src="./image/brade .jpg"/></a>
+                        <h4>Britainna Muiltigrain</h4>
+                        <h4>Bread</h4>
+                        <h6>400 g</h6>
+                        <h5 class="mrp">$60</h5>
+                        <button type="submit">ADD</button>
+                </div> 
+
+                <div class="card-section1">
+                         <a href="dhahi.html"><img src="./image/dhahi.jpg"/></a>
+                        <h4>Mother Dairy</h4>
+                        <h4>Classic Curd</h4>
+                        <h6>400 g</h6>
+                        <h5 class="mrp">$50</h5>
+                        <button type="submit">ADD</button>
+                        
+                </div> 
+
+                <div class="card-section1">
+                    <a href="shrikhand.html"><img src="./image/shrikhand.jpg"/></a>
+                    <h4>Amul Mango</h4>
+                    <h4>Shrikhand</h4>
+                    <h6>500 g</h6>
+                    <h5 class="mrp">$115</h5>
+                    <button type="submit">ADD</button>
+                </div>
+
+                <div class="card-section1">
+                    <a href="butter.html"><img src="./image/butter.jpg"/></a>
+                    <h4>Amul salted</h4>
+                    <h4>Butter</h4>
+                    <h6>500 g</h6>
+                    <h5 class="mrp">$250</h5>
+                    <button type="submit">ADD</button>
+                </div>
+                
+                <div class="card-section1">
+                    <a href="paneer.html"><img src="./image/paneer.jpg"/></a>
+                    <h4>Amul Fresh Malai</h4>
+                    <h4>Paneer</h4>
+                    <h6>200 g</h6>
+                    <h5 class="mrp">$88</h5>
+                    <button type="submit">ADD</button>
+                </div>
+
+            </div>
+        </div>
+        <div >
+            <footer class="footer">
+                 <div class="footer1">
+                    <a href="#">BACK TO HOME</a>
+                 </div>
+                   
+                <div class="footer2">
+                    <ul>
+                        <p>Company</p>
+                        <a href="about.html">about</a>
+                        <a href="#">lead</a>
+                        <a href="#">value</a>
+                    </ul>
+                    <ul>
+                        <p>For Consumers </p>
+                        <a href="privacy.html">Privacy & Terms</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="partner.html">Partners</a>
+
+                    </ul>
+               
+                    <ul>
+                        <p>Product</p>
+                        <a href="card2.html">Vegetable</a>
+                        <a href="card1.html">Fruits</a>
+                        <a href="card .html">Dairy Product</a>
+                        <a href="pulses.html">Pulses</a>
+                        <a href="grains.html">Grains</a>
+                    </ul>
+               
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="./main.js"></script>
+</body>  
+</html>

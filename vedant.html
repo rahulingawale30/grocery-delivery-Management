@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Dashboard </title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="warning">
+        <h2> Sorry, this page doesn't support your device, Please use large screen device to see this page </h2>
+    </div>
+
+    <section>
+        <!-- User Sidebar Starts from Here -->
+        <div class="navbar" id="navigation">
+            <img src="./image/"/>
+            <hr>
+           <h4 class="side">EXERCISE</h4>
+            <ul class="center-nav">
+                <li><a href="#">  Chest </a></li>
+                <li><a href="#"> Shoulder </a></li>
+                <li><a href="#"> Biceps </a></li>
+                <li><a href="#"> Triceps </a></li>
+                <li><a href="#">Abs </a></li>
+                <li><a href="#">Back </a></li>
+                <li><a href="#"> Legs </a></li>
+            </ul>
+		<hr class="hr">
+            <h4 class="side">WORKOUT</h4>
+               <ul class="center-nav">
+                   <li>Fitness</li>
+		   <li>Bodybuilding</li>
+		   <li>Powerlifting</li>
+               <ul>
+                <hr class="hr">
+             <h4 class="side">OTHER</h4>
+              <ul class="center-nav">
+                   <li>Muscle Food</li>
+		   <li>Workout Log</li>
+		   <li>Powerlifting</li>
+               <ul>
+            <ul class="bottom-nav">
+                <hr class="hr">
+                <li><i class="fa-solid fa-gear"></i><a href="#"> Settings </a></li>
+                <li><i class="fa-solid fa-power-off"></i><a href="#"> Logout </a></li>
+            </ul>
+        </div>
+
+        <!-- User Top Naviagation Starts from Here -->
+        <div class="main-content">
+            <div class="main-top">
+                <div class="bars" id="menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="home"><h3>HOME</h3></div>
+          
+                          
+       </div>
+    </section>
+
+</body>
+
+<script>
+    const hamburger = document.getElementById('menu');
+    const navigation = document.getElementById('navigation');
+    hamburger.addEventListener('click', function () {
+        navigation.classList.toggle('active')
+        console.log('clicked');
+    })
+</script>
+
+</html>
